@@ -1,14 +1,28 @@
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH=/Users/niclas/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="niclas"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+
+#Additional PowerLevel9k customization
+#For more information look at https://github.com/bhilburn/powerlevel9k#segment-customization
+#Enable Awesome Patched Fonts
+POWERLEVEL9K_MODE='awesome-patched'
+#Powerlevel Left Bar Elements
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+#Powerlevel Right Bar Elements
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(context)
+
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -45,14 +59,14 @@ ZSH_THEME="niclas"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew rvm niclas)
-
-source $ZSH/oh-my-zsh.sh
+plugins=(git vim niclas brew)
 
 # User configuration
 
-export PATH=$PATH:"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/niclas/.rvm/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
+
+source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -78,9 +92,3 @@ export PATH=$PATH:"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-export PATH=/usr/local/bin:$PATH
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-source dnvm.sh
