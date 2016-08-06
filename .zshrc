@@ -62,6 +62,10 @@ plugins=(git brew)
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+# GOPATH
+export GOPATH=$HOME/go/
+export PATH=$PATH:${GOPATH//://bin:}/bin
+
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
