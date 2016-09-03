@@ -93,8 +93,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# docker compose aliases
+# docker-compose aliases
 alias dcd="docker-compose down"
 alias dcup="docker-compose up"
 alias dcupd="docker-compose up -d"
+alias dcl="docker-compose logs"
 alias dclf="docker-compose logs -f"
+alias dcs="docker-compose stop"
+alias dcrm="docker-compose rm"
