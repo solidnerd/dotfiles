@@ -101,3 +101,6 @@ alias dcl="docker-compose logs"
 alias dclf="docker-compose logs -f"
 alias dcs="docker-compose stop"
 alias dcrm="docker-compose rm"
+
+# docker-machine aliases
+alias dm="docker-machine"
