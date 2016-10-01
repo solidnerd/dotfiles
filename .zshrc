@@ -11,7 +11,8 @@ POWERLEVEL9K_MODE='awesome-patched'
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(rvm node_version)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(rvm go_version)
+
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
