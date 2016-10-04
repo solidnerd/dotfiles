@@ -1,3 +1,6 @@
 [user]
 	email = niclas@mietz.io
 	name = solidnerd
+	signingkey = B5469BE5
+[commit]
+	gpgsign = true
