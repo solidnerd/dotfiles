@@ -1,3 +1,8 @@
+[alias]
+	# Checkout a pull request from origin (of a github repository)
+	pr = !"pr() { git fetch origin pull/$1/head:pr-$1; git checkout pr-$1; }; pr"
+	# Checkout a pull request from upstream (of a github repository)
+	pru = !"pr() { git fetch upstream pull/$1/head:pr-$1; git checkout pr-$1; }; pr"
 [user]
 	email = niclas@mietz.io
 	name = solidnerd
