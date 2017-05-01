@@ -3,6 +3,9 @@
 	pr = !"pr() { git fetch origin pull/$1/head:pr-$1; git checkout pr-$1; }; pr"
 	# Checkout a pull request from upstream (of a github repository)
 	pru = !"pr() { git fetch upstream pull/$1/head:pr-$1; git checkout pr-$1; }; pr"
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	pf = push --force-with-lease
+	ce = commit --allow-empty
 [user]
 	email = niclas@mietz.io
 	name = solidnerd
