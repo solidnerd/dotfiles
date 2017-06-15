@@ -21,24 +21,5 @@ export PATH=$PATH:${GOPATH//://bin:}/bin
 
 source $ZSH/oh-my-zsh.sh
 
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# docker-compose aliases
-alias dcd="docker-compose down"
-alias dcup="docker-compose up"
-alias dcupd="docker-compose up -d"
-alias dcl="docker-compose logs"
-alias dclf="docker-compose logs -f"
-alias dcs="docker-compose stop"
-alias dcrm="docker-compose rm"
-
-# docker-machine aliases
-alias dm="docker-machine"
+source $HOME/.exports
+source $HOME/.alias

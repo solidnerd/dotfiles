@@ -1,0 +1,15 @@
+# Visual Studio Code
+alias vscode='open -a Visual\ Studio\ Code'
+
+# docker-compose aliases
+alias dcd='docker-compose down'
+alias dcup='docker-compose up'
+alias dcupd='docker-compose up -d'
+alias dcl='docker-compose logs'
+alias dclf='docker-compose logs -f'
+alias dcp='docker-compose ps'
+alias dcs='docker-compose stop'
+alias dcrm='docker-compose rm'
+
+# docker-machine aliases
+alias dm='docker-machine'
