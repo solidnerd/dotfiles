@@ -17,3 +17,5 @@
 [core]
 	editor = /usr/bin/vim
 	trustctime = false
+[includeIf "gitdir:~/develop/bee42/*"]
+  path = .gitconfig-bee42
