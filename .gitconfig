@@ -19,7 +19,7 @@
 	rebase = true
 
 [core]
-	editor = /usr/bin/nvim
+	editor = /usr/local/bin/nvim 
 	trustctime = false
 
 [includeIf "gitdir:~/develop/bee42/*"]
