@@ -1,2 +1,2 @@
 export EDITOR=/usr/local/bin/nvim
-
+export GPG_TTY=$(tty)
