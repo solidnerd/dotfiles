@@ -1,9 +1,11 @@
 {
     "window.zoomLevel": 0,
     "workbench.colorTheme": "peacocks-in-space",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.enableBold": true,
     "editor.fontFamily": "'Source Code Pro',Menlo, Monaco, 'Courier New', monospace",
     "typescript.check.npmIsInstalled": false,
-    "terminal.integrated.fontFamily": "'SourceCodePro+Powerline+Awesome Regular'",
+    "terminal.integrated.fontFamily": "SauceCodePro Nerd Font",
     "files.insertFinalNewline": true,
     "editor.formatOnPaste": true,
     "editor.renderWhitespace": "all",
