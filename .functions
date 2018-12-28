@@ -1,0 +1,70 @@
+#!/bin/bash
+
+# Create a new directory and enter it
+mkd() {
+	mkdir -p "$@"
+	cd "$@" || exit
+}
+
+kops_state(){
+ export KOPS_STATE_STORE=s3://$AWS_PROFILE-kops-state
+ export AWS_SDK_LOAD_CONFIG=1
+}
+
+# Make a temporary directory and enter it
+tmpd() {
+	local dir
+	if [ $# -eq 0 ]; then
+		dir=$(mktemp -d)
+	else
+		dir=$(mktemp -d -t "${1}.XXXXXXXXXX")
+	fi
+	cd "$dir" || exit
+}
+
+# go to a folder easily in your gopath
+gogo(){
+	local d=$1
+
+	if [[ -z $d ]]; then
+		echo "You need to specify a project name."
+		return 1
+	fi
+
+	if [[ "$d" == github* ]]; then
+		d=$(echo "$d" | sed 's/.*\///')
+	fi
+	d=${d%/}
+
+	# search for the project dir in the GOPATH
+	local path=( $(find "${GOPATH}/src" \( -type d -o -type l \) -iname "$d"  | awk '{print length, $0;}' | sort -n | awk '{print $2}') )
+
+	if [ "${path[0]}" == "" ] || [ "${path[*]}" == "" ]; then
+		echo "Could not find a directory named $d in $GOPATH"
+		echo "Maybe you need to 'go get' it ;)"
+		return 1
+	fi
+
+	# enter the first path found
+	cd "${path[0]}" || return 1
+}
+
+
+bee42_clone_group() {
+    group=$1
+    pages=$(curl -I "https://gitlab.bee42.com/api/v4/groups/$group/projects?private_token=${PRIVATE_TOKEN}" | perl -ne 'm/X-Total-Pages: (\d+)/ && print $1')
+    echo "Fetching page $i for group $i"
+    for i in $(seq 1 "$pages"); do
+        for r in $(curl "https://gitlab.bee42.com/api/v4/groups/$group/projects?private_token=${PRIVATE_TOKEN}&page=$i" | jq '.[] | .ssh_url_to_repo'); do
+            b=$(basename "${r//\"/}")
+            dir=${b/\.git/}
+            if [[ ! -d $dir ]]; then
+                echo Cloning "${r//\"/}"
+                git clone "${r//\"/}"
+            else
+                echo "Repo dir $dir already exists, not doing anything"
+            fi
+        done
+    done
+}
+
