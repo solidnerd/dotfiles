@@ -1,0 +1,23 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+{
+    "key": "cmd+[BracketRight]",     
+    "command": "fontshortcuts.increaseFontSize"
+},
+{
+    "key": "cmd+-",
+    "command": "fontshortcuts.decreaseFontSize"
+},
+{
+    "key": "ctrl+shift+right",
+    "command": "workbench.action.terminal.focusNext"
+},
+{
+    "key": "ctrl+shift+left",
+    "command": "workbench.action.terminal.focusPrevious"
+},
+{
+    "key": "cmd+n",
+    "command": "newFile.createNewFile"
+}
+]

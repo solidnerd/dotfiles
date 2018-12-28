@@ -1,0 +1,27 @@
+{
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "peacocks-in-space",
+    "editor.fontFamily": "'Source Code Pro',Menlo, Monaco, 'Courier New', monospace",
+    "typescript.check.npmIsInstalled": false,
+    "terminal.integrated.fontFamily": "'SourceCodePro+Powerline+Awesome Regular'",
+    "files.insertFinalNewline": true,
+    "editor.formatOnPaste": true,
+    "editor.renderWhitespace": "all",
+    "editor.renderIndentGuides": true,
+    "git.enabled": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "docker.showExplorer": false,
+    "window.title": "${activeEditorLong}",
+    "go.autocompleteUnimportedPackages": true,
+    "go.useLanguageServer": true,
+    "[terraform]": {
+        "editor.formatOnSave": true
+    },
+    "shellcheck.run": "onSave",
+    "editor.minimap.enabled": false,
+    "python.sortImports.args": [
+        "-rc",
+        "--atomic"
+    ],
+
+}
