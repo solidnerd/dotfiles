@@ -14,4 +14,10 @@ vscode:
 	ln -sfn $(CURDIR)/vscode/keybindings.json $$HOME/Library/Application\ Support/Code/User/keybindings.json
 	ln -sfn $(CURDIR)/vscode/snippets $$HOME/Library/Application\ Support/Code/User/snippets
 
+.PHONY: brewfile
+brewfile:
+	@mv -v $(CURDIR)/Brewfile $(CURDIR)/Brewfile.old
+	@brew bundle dump
+
+
 	
