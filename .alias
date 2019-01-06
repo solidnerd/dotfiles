@@ -10,11 +10,11 @@ alias dcrm='docker-compose rm'
 
 # docker-machine aliases
 alias dm='docker-machine'
-alias bee-pub='cat $HOME/.ssh/bee42_ed25519.pub'
 
+# kubernetes
 alias k='kubectl'
 
-
+# Terraform 
 alias tf='terraform'
 alias tfd='terraform destroy'
 alias tfa='terraform apply'
@@ -22,3 +22,6 @@ alias tfaa='terraform apply -auto-approve'
 
 alias tfp='terraform plan'
 alias tfi='terraform init'
+
+# vhosts
+alias hosts='sudo vim /etc/hosts'
