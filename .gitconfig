@@ -6,7 +6,10 @@
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	pf = push --force-with-lease
 	ce = commit --allow-empty
-
+	co = checkout
+	 s = status -s
+	st = status
+   
 [user]
 	email = niclas@mietz.io
 	name = solidnerd
