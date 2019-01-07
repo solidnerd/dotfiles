@@ -17,7 +17,7 @@ POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 POWERLEVEL9K_SHORTEN_DELIMITER=""
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 
-plugins=(git brew zsh-autosuggestions kubectl aws)
+plugins=(brew zsh-autosuggestions kubectl aws)
 
 # User configuration
 
