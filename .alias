@@ -1,3 +1,6 @@
+# git
+alias g='git '
+
 # docker-compose aliases
 alias dcd='docker-compose down'
 alias dcup='docker-compose up'
