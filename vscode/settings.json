@@ -15,6 +15,7 @@
     "go.autocompleteUnimportedPackages": true,
     "go.useLanguageServer": true,
     "go.lintTool": "gometalinter",
+    "go.lintFlags": ["--fast"],
     "[terraform]": {
         "editor.formatOnSave": true
     },
