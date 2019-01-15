@@ -28,3 +28,6 @@ alias tfi='terraform init'
 
 # vhosts
 alias hosts='sudo vim /etc/hosts'
+
+alias kctx='kubectx'
+alias kns='kubens'
