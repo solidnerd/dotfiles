@@ -1,6 +1,6 @@
 {
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "peacocks-in-space",
+    "workbench.colorTheme": "Bluloco Dark",
     "terminal.external.osxExec": "iTerm.app",
     "editor.fontFamily": "'Source Code Pro',Menlo, Monaco, 'Courier New', monospace",
     "typescript.check.npmIsInstalled": false,
