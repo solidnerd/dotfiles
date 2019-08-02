@@ -22,7 +22,7 @@ export PATH=$PATH:${GOPATH//://bin:}/bin
 source $ZSH/oh-my-zsh.sh
 
 source $HOME/.exports
-source $HOME/.alias
+source $HOME/.aliases
 source $HOME/.functions
 export PATH=$PATH:/Users/niclas/bin
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
