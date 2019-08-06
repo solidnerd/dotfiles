@@ -1,3 +1,5 @@
+ZSH_CUSTOM := $(HOME)/.oh-my-zsh/custom
+
 .PHONY: dotfiles
 dotfiles: ## Installs the dotfiles.
 	# add aliases for dotfiles
@@ -20,5 +22,18 @@ brewfile:
 	@mv -v $(CURDIR)/Brewfile $(CURDIR)/Brewfile.old
 	@brew bundle dump
 
+shell:
+	if [ ! -d $$HOME/.oh-my-zsh ]; then \
+		git clone https://github.com/robbyrussell/oh-my-zsh.git "$$HOME/.oh-my-zsh"; \
+	else \
+		cd "$$HOME/.oh-my-zsh"; \
+		git pull "$$HOME/.oh-my-zsh"; \
+	fi;
 
-	
+prompt: shell spaceship
+spaceship:
+	git clone https://github.com/denysdovhan/spaceship-prompt.git "${ZSH_CUSTOM}/themes/spaceship-prompt"
+	ln -s "${ZSH_CUSTOM}/themes/spaceship-prompt/spaceship.zsh-theme" "${ZSH_CUSTOM}/themes/spaceship.zsh-theme"
+
+powerlevel9k:
+	git clone https://github.com/bhilburn/powerlevel9k.git "${ZSH_CUSTOM}/themes/powerlevel9k"
