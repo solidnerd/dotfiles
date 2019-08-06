@@ -36,10 +36,15 @@ alias k='kubectl'
 alias tf='terraform'
 alias tfd='terraform destroy'
 alias tfa='terraform apply'
+alias tfr='terraform refresh'
 alias tfaa='terraform apply -auto-approve'
 
 alias tfp='terraform plan'
 alias tfi='terraform init'
+alias tfws='terraform workspace select'
+alias tfwl='terraform workspace list'
+alias tfw='terraform workspace'
+
 
 # vhosts
 alias hosts='sudo vim /etc/hosts'
