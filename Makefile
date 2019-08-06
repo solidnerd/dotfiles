@@ -7,6 +7,7 @@ dotfiles: ## Installs the dotfiles.
 	done; \
 	ln -sfn $(CURDIR)/.gnupg/gpg.conf $(HOME)/.gnupg/gpg.conf;
 	ln -sfn $(CURDIR)/.gnupg/gpg-agent.conf $(HOME)/.gnupg/gpg-agent.conf;
+	ln -s $(HOME)/.tfenv/bin/* /usr/local/bin
 
 .PHONY: vscode
 vscode:
