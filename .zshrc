@@ -31,5 +31,7 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+[ -f ~/.iterm2_statusbar.zsh ] && source ~/.iterm2_statusbar.zsh
+
 source <(hcloud completion zsh)
 source <(helm completion zsh | sed -E 's/\["(.+)"\]/\[\1\]/g')
