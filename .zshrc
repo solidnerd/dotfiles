@@ -1,4 +1,5 @@
 #!/bin/env zsh
+export LC_ALL=en_US.UTF-8
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 export TERM=xterm-256color
@@ -9,7 +10,7 @@ ZSH_THEME="spaceship"
 [ -f ~/.spaceship.zsh ] && [ "$ZSH_THEME" = "spaceship" ] && source ~/.spaceship.zsh 
 [ -f ~/.powerlevel9k.zsh ] && [ "$ZSH_THEME" = "powerlevel9k/powerlevel9k" ] && source ~/.powerlevel9k.zsh
 
-plugins=(iterm2 aws)
+plugins=(iterm2 aws brew)
 
 # User configuration
 
