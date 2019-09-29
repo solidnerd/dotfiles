@@ -16,6 +16,8 @@ vscode:
 	ln -sfn $(CURDIR)/vscode/settings.json $$HOME/Library/Application\ Support/Code/User/settings.json
 	ln -sfn $(CURDIR)/vscode/keybindings.json $$HOME/Library/Application\ Support/Code/User/keybindings.json
 	ln -sfn $(CURDIR)/vscode/snippets $$HOME/Library/Application\ Support/Code/User/snippets
+	bash $(CURDIR)/vscode/extensions 
+
 .PHONY: vscode-ext-bump
 vscode-ext-bump:
 	@mv -v $(CURDIR)/vscode/extensions $(CURDIR)/vscode/extensions.old
