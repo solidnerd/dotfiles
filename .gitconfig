@@ -25,12 +25,15 @@
 	editor = /usr/local/bin/nvim 
 	trustctime = false
 
-[includeIf "gitdir:~/develop/bee42/*"]
-  path = .gitconfig-bee42
-
 [diff "sopsdiffer"]
 	textconv = sops -d
 [gpg]
 	program = /usr/local/bin/gpg
 [icdiff]
 	options = --highlight --line-numbers
+
+[includeIf "gitdir:~/develop/cc/**"]
+    path = .gitconfig-cc
+
+[includeIf "gitdir:~/go/src/communicode.de/**"]
+    path = .gitconfig-cc
