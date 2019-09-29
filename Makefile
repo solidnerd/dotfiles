@@ -28,6 +28,11 @@ brewfile: vscode-ext-bump
 	@mv -v $(CURDIR)/Brewfile $(CURDIR)/Brewfile.old
 	@brew bundle dump
 
+.PHONY: brew
+brew:
+	# /usr/bin/ruby -e "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	brew bundle install --file "$(CURDIR)/Brewfile"
+
 shell:
 	if [ ! -d $$HOME/.oh-my-zsh ]; then \
 		git clone https://github.com/robbyrussell/oh-my-zsh.git "$$HOME/.oh-my-zsh"; \
