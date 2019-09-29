@@ -50,21 +50,3 @@ gogo(){
 }
 
 
-bee42_clone_group() {
-    group=$1
-    pages=$(curl -I "https://gitlab.bee42.com/api/v4/groups/$group/projects?private_token=${PRIVATE_TOKEN}" | perl -ne 'm/X-Total-Pages: (\d+)/ && print $1')
-    echo "Fetching page $i for group $i"
-    for i in $(seq 1 "$pages"); do
-        for r in $(curl "https://gitlab.bee42.com/api/v4/groups/$group/projects?private_token=${PRIVATE_TOKEN}&page=$i" | jq '.[] | .ssh_url_to_repo'); do
-            b=$(basename "${r//\"/}")
-            dir=${b/\.git/}
-            if [[ ! -d $dir ]]; then
-                echo Cloning "${r//\"/}"
-                git clone "${r//\"/}"
-            else
-                echo "Repo dir $dir already exists, not doing anything"
-            fi
-        done
-    done
-}
-
