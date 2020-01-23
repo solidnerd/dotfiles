@@ -14,7 +14,7 @@
     "window.title": "${activeEditorLong}",
     "go.autocompleteUnimportedPackages": true,
     "go.useLanguageServer": true,
-    "go.lintTool": "gometalinter",
+    "go.lintTool": "golangci-lint",
     "go.lintFlags": ["--fast"],
     "[terraform]": {
         "editor.formatOnSave": true
