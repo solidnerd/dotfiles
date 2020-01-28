@@ -9,6 +9,8 @@
 	co = checkout
 	 s = status -s
 	st = status
+	mwps = push -o merge_request.create -o merge_request.target=master -o merge_request.merge_when_pipeline_succeeds
+	mrm = push -o merge_request.create -o merge_request.target=master
    
 [user]
 	email = niclas@mietz.io
