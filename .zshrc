@@ -36,3 +36,5 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 
 source <(hcloud completion zsh)
 source <(helm completion zsh | sed -E 's/\["(.+)"\]/\[\1\]/g')
+
+[ -f "$HOME/.sdkman/bin/sdkman-init.sh" ] && source "$HOME/.sdkman/bin/sdkman-init.sh"
