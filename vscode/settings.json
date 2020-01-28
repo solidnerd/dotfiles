@@ -36,8 +36,12 @@
     },
     "shellcheck.run": "onSave",
     "editor.minimap.enabled": false,
-
-
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "gitlens.advanced.messages": {
+        "suppressGitDisabledWarning": true
+    },
     "vim.disableExtension": true,
     "java.home": ".sdkman/candidates/java/current",
     "editor.suggestSelection": "first",
