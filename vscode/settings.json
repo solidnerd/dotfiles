@@ -16,8 +16,23 @@
     "go.useLanguageServer": true,
     "go.lintTool": "golangci-lint",
     "go.lintFlags": ["--fast"],
+    "terraform.indexing": {
+        "enabled": false,
+        "liveIndexing": false,
+        "delay": 500,
+        "exclude": [
+            ".terraform/**/*",
+            "**/.terraform/**/*"
+        ]
+    },
+    "terraform.languageServer": {
+        "enabled": true,
+        "args": []
+    },
+    
     "[terraform]": {
         "editor.formatOnSave": true
+        
     },
     "shellcheck.run": "onSave",
     "editor.minimap.enabled": false,
