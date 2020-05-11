@@ -13,6 +13,11 @@ for opener in browser-exec xdg-open cmd.exe cygstart "start" open; do
 done
 
 
+#dns
+alias rdns='sudo networksetup -setdnsservers Wi-Fi empty'
+alias sdns='sudo networksetup -setdnsservers Wi-Fi "8.8.8.8" "8.8.4.4" "1.1.1.1"'
+
+
 # git
 alias g='git '
 
