@@ -7,6 +7,8 @@ ZSH_TMUX_AUTOSTART='true'
 
 ZSH_THEME="spaceship"
 
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
 [ -f ~/.spaceship.zsh ] && [ "$ZSH_THEME" = "spaceship" ] && source ~/.spaceship.zsh 
 [ -f ~/.powerlevel9k.zsh ] && [ "$ZSH_THEME" = "powerlevel9k/powerlevel9k" ] && source ~/.powerlevel9k.zsh
 
@@ -14,7 +16,6 @@ plugins=(iterm2 aws brew)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # GOPATH
 export GOPATH=$HOME/go/
