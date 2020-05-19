@@ -12,6 +12,10 @@ for opener in browser-exec xdg-open cmd.exe cygstart "start" open; do
 	fi
 done
 
+# Linux aliases
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+
 
 #dns
 alias rdns='sudo networksetup -setdnsservers Wi-Fi empty'
