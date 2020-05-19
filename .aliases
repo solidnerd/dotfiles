@@ -25,6 +25,8 @@ alias sdns='sudo networksetup -setdnsservers Wi-Fi "8.8.8.8" "8.8.4.4" "1.1.1.1"
 # git
 alias g='git '
 
+alias gt='gittower (git rev-parse --show-toplevel)'
+
 # docker-compose aliases
 alias dcd='docker-compose down'
 alias dcup='docker-compose up'
