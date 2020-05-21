@@ -52,4 +52,5 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
+    "editor.tabSize": 2,
 }
