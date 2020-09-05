@@ -1,5 +1,6 @@
 #!/bin/zsh
-source $HOME/.iterm2_shell_integration.zsh
+
+[ -f ~/.iterm2_shell_integration.zsh ] && source $HOME/.iterm2_shell_integration.zsh
 
 
 iterm2_print_user_vars() {

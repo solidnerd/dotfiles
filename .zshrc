@@ -16,6 +16,7 @@ plugins=(iterm2 aws brew)
 
 # User configuration
 
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin"
 
 # GOPATH
 export GOPATH=$HOME/go/
@@ -37,8 +38,7 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 
 source <(hcloud completion zsh)
 source <(helm completion zsh | sed -E 's/\["(.+)"\]/\[\1\]/g')
-
 [ -f "$HOME/.sdkman/bin/sdkman-init.sh" ] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-terraform-docs completion zsh > /usr/local/share/zsh/site-functions/_terraform-docs
+source <(terraform-docs completion zsh)
 autoload -U compinit && compinit
