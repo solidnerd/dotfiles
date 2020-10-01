@@ -34,11 +34,9 @@
 [icdiff]
 	options = --highlight --line-numbers
 
-[includeIf "gitdir:~/develop/cc/**"]
-    path = .gitconfig-cc
+[includeIf "gitdir:~/develop/sph/**"]
+    path = .gitconfig-sph
 
-[includeIf "gitdir:~/go/src/communicode.de/**"]
-    path = .gitconfig-cc
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
