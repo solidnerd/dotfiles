@@ -1,0 +1,7 @@
+[character]                            # The name of the module we are configuring is "character"
+success_symbol = "[➜](bold green)"
+
+[kubernetes]
+disabled = false
+style= "cyan bold"
+format = 'on [⛵ $context \($namespace\)](purple) '

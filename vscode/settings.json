@@ -1,6 +1,6 @@
 {
-    "window.zoomLevel": 0,
-    "workbench.colorTheme": "Bluloco Dark",
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
     "terminal.external.osxExec": "iTerm.app",
     "editor.fontFamily": "'Source Code Pro',Menlo, Monaco, 'Courier New', monospace",
     "typescript.check.npmIsInstalled": false,
@@ -10,30 +10,15 @@
     "editor.renderWhitespace": "all",
     "editor.renderIndentGuides": true,
     "git.enabled": false,
+    "workbench.editor.showTabs": true,
+    "explorer.openEditors.visible": 0,
+    "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "window.title": "${activeEditorLong}",
     "go.autocompleteUnimportedPackages": true,
     "go.useLanguageServer": true,
     "go.lintTool": "golangci-lint",
     "go.lintFlags": ["--fast"],
-    "terraform.indexing": {
-        "enabled": false,
-        "liveIndexing": false,
-        "delay": 500,
-        "exclude": [
-            ".terraform/**/*",
-            "**/.terraform/**/*"
-        ]
-    },
-    "terraform.languageServer": {
-        "enabled": true,
-        "args": []
-    },
-    
-    "[terraform]": {
-        "editor.formatOnSave": true
-        
-    },
     "shellcheck.run": "onSave",
     "editor.minimap.enabled": false,
     "[json]": {
@@ -43,9 +28,8 @@
         "suppressGitDisabledWarning": true
     },
     "vim.disableExtension": true,
-    "java.home": ".sdkman/candidates/java/current",
+
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "files.exclude": {
         "**/.classpath": true,
         "**/.project": true,
@@ -53,4 +37,11 @@
         "**/.factorypath": true
     },
     "editor.tabSize": 2,
+    "workbench.statusBar.visible": true,
+    "vs-kubernetes": {
+        "vs-kubernetes.minikube-path.mac": "/Users/niclas/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
 }
