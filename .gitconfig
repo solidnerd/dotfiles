@@ -11,7 +11,7 @@
 	st = status
 	mwps = push -o merge_request.create -o merge_request.target=master -o merge_request.merge_when_pipeline_succeeds
 	mrm = push -o merge_request.create -o merge_request.target=master
-   
+        re-main = branch -m master main   
 [user]
 	email = niclas@mietz.io
 	name = solidnerd
@@ -34,13 +34,17 @@
 [icdiff]
 	options = --highlight --line-numbers
 
-[includeIf "gitdir:~/develop/cc/**"]
-    path = .gitconfig-cc
+[includeIf "gitdir:~/develop/sph/**"]
+    path = .gitconfig-sph
 
-[includeIf "gitdir:~/go/src/communicode.de/**"]
-    path = .gitconfig-cc
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
+    smudge = git-lfs smudge -- %f
+
+[credential "https://gitlab.com/solidnerd"]
+    username = git
+    useHttpPath = true
+[init]
+	defaultBranch = main

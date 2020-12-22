@@ -9,7 +9,7 @@ ZSH_THEME="spaceship"
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
-[ -f ~/.spaceship.zsh ] && [ "$ZSH_THEME" = "spaceship" ] && source ~/.spaceship.zsh 
+[ -f ~/.spaceship.zsh ] && [ "$ZSH_THEME" = "spaceship" ] && eval "$(starship init zsh)"
 [ -f ~/.powerlevel9k.zsh ] && [ "$ZSH_THEME" = "powerlevel9k/powerlevel9k" ] && source ~/.powerlevel9k.zsh
 
 plugins=(iterm2 aws brew)
@@ -27,6 +27,7 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.exports
 source $HOME/.aliases
 source $HOME/.functions
+
 export PATH=$PATH:/Users/niclas/bin
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
@@ -37,7 +38,7 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 [ -f ~/.iterm2_statusbar.zsh ] && source ~/.iterm2_statusbar.zsh
 
 source <(hcloud completion zsh)
-source <(helm completion zsh | sed -E 's/\["(.+)"\]/\[\1\]/g')
+source <(helm completion zsh)
 [ -f "$HOME/.sdkman/bin/sdkman-init.sh" ] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 source <(terraform-docs completion zsh)
