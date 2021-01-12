@@ -385,3 +385,14 @@ key_bindings:
   - { key: Key0,     mods: Control|Alt,    chars: "}"                    }
   - { key: 12,       mods: Control|Alt,    chars: '\'                    }
   - { key: Equals,   mods: Control|Alt,    chars: '~'                    }
+# Picked from https://github.com/alacritty/alacritty/wiki/Keyboard-mappings
+# When using an german MacBookPro (15", 2019) with Touchbar,
+# these might fail, but here's a working solution
+  - { key: 28,      mods: Alt, chars: "{" }
+  - { key: 25,      mods: Alt, chars: "}" }
+  - { key: 37,      mods: Alt, chars: "@" }
+  - { key: 26,      mods: Alt|Shift, chars: "\\" }
+  - { key: 26,      mods: Alt, chars: "|" }
+  - { key: 45,      mods: Alt, chars: "~" }
+  - { key: 23,      mods: Alt, chars: "[" }
+  - { key: 22,      mods: Alt, chars: "]" }
