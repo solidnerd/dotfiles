@@ -1,6 +1,6 @@
 {
     "window.zoomLevel": 1,
-    "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
+    "workbench.colorTheme": "Bluloco Dark",
     "terminal.external.osxExec": "iTerm.app",
     "editor.fontFamily": "'Source Code Pro',Menlo, Monaco, 'Courier New', monospace",
     "typescript.check.npmIsInstalled": false,
@@ -43,5 +43,9 @@
     },
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "terminal.integrated.fontSize": 15,
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 }
