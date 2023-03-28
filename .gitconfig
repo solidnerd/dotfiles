@@ -4,10 +4,14 @@
 	# Checkout a pull request from upstream (of a github repository)
 	pru = !"pr() { git fetch upstream pull/$1/head:pr-$1; git checkout pr-$1; }; pr"
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	pf = push --force-with-lease
+        p  = push
+        pf = push --force
+        pfl = push --force-with-lease
 	ce = commit --allow-empty
-	co = checkout
-	 s = status -s
+        cm = commit -m 
+        co = checkout
+        cob = checkout -b
+         s = status -s
 	st = status
 	mwps = push -o merge_request.create -o merge_request.target=master -o merge_request.merge_when_pipeline_succeeds
 	mrm = push -o merge_request.create -o merge_request.target=master
