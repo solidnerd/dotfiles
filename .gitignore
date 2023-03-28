@@ -1,1 +1,6 @@
 .DS_Store
+.config/*
+
+!.config/gitui/*
+!.config/gh/*
+!.config/glab-cli/*

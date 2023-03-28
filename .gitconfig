@@ -32,6 +32,7 @@
 [core]
 	editor = /usr/local/bin/nvim 
 	trustctime = false
+	excludesfile = /Users/niclas/.gitignore
 
 [diff "sopsdiffer"]
 	textconv = sops -d
