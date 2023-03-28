@@ -8,7 +8,6 @@
     "files.insertFinalNewline": true,
     "editor.formatOnPaste": true,
     "editor.renderWhitespace": "all",
-    "editor.renderIndentGuides": true,
     "git.enabled": false,
     "workbench.editor.showTabs": true,
     "explorer.openEditors.visible": 0,
@@ -39,7 +38,8 @@
     "editor.tabSize": 2,
     "workbench.statusBar.visible": true,
     "vs-kubernetes": {
-        "vs-kubernetes.minikube-path.mac": "/Users/niclas/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+        "vs-kubernetes.minikube-path.mac": "/Users/niclas/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+        "vscode-kubernetes.minikube-path.mac": "/Users/niclas/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
     },
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
@@ -47,5 +47,21 @@
     "terminal.integrated.fontSize": 15,
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.guides.indentation": true,
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[python]": {
+        "editor.formatOnType": true
     },
 }
