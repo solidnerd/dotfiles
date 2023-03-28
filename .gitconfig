@@ -53,5 +53,10 @@
 [credential "https://gitlab.com/solidnerd"]
     username = git
     useHttpPath = true
+[credential "https://gitlab.com/everyonecancontribute"]
+    username = git
+    useHttpPath = true
 [init]
 	defaultBranch = main
+[credential]
+	helper = store
