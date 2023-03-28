@@ -2,6 +2,6 @@
 success_symbol = "[➜](bold green)"
 
 [kubernetes]
-disabled = false
+disabled = true
 style= "cyan bold"
 format = 'on [⛵ $context \($namespace\)](purple) '
