@@ -1,28 +1,36 @@
 #!/bin/env zsh
+
 export LC_ALL=en_US.UTF-8
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
 export TERM=xterm-256color
+
 ZSH_TMUX_AUTOSTART='true'
 
 ZSH_THEME="spaceship"
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
-[ -f ~/.spaceship.zsh ] && [ "$ZSH_THEME" = "spaceship" ] && eval "$(starship init zsh)"
-[ -f ~/.powerlevel9k.zsh ] && [ "$ZSH_THEME" = "powerlevel9k/powerlevel9k" ] && source ~/.powerlevel9k.zsh
+# eval "$(starship init zsh)"
 
-plugins=(iterm2 aws brew)
-
-# User configuration
-
+# $HOME/bin configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin"
 
-# GOPATH
+# golang
 export GOPATH=$HOME/go/
 export PATH=$PATH:${GOPATH//://bin:}/bin
 
+# oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
+plugins=(aws brew dotenv virtualenv)
+
+export VIRTUAL_ENV_DISABLE_PROMPT=false
+
 source $ZSH/oh-my-zsh.sh
+
+
+# ASDF
+export ASDF_DIR="$(brew --prefix asdf)/libexec"
+source $ASDF_DIR/asdf.sh
+#source $ASDF_DIR/etc/bash_completion.d/asdf.bash
 
 source $HOME/.exports
 source $HOME/.aliases
@@ -31,15 +39,33 @@ source $HOME/.functions
 export PATH=$PATH:/Users/niclas/bin
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
-[ -f ~/.ktx-completion.sh ] && source "${HOME}"/.ktx-completion.sh
+export PATH="${PATH}:${HOME}/.krew/bin"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 [ -f ~/.iterm2_statusbar.zsh ] && source ~/.iterm2_statusbar.zsh
 
-source <(hcloud completion zsh)
-source <(helm completion zsh)
+# Load Helm Access 
+[ -f ~/.helmrc ] && source ~/.helmrc
+
+
+# source <(hcloud completion zsh)
 [ -f "$HOME/.sdkman/bin/sdkman-init.sh" ] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-source <(terraform-docs completion zsh)
-autoload -U compinit && compinit
+# source <(terraform-docs completion zsh)
+export PATH="/usr/local/sbin:$PATH"
+# source <(k3d completion zsh)
+
+export PATH="/usr/local/opt/mongodb-community@4.0/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+
+
+
+
+PATH="/Users/niclas/.local/share/solana/install/active_release/bin:$PATH"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+. ~/.asdf/plugins/java/set-java-home.zsh
+
+# zprof
