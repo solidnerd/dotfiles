@@ -24,7 +24,7 @@ vscode-ext-bump:
 	code --list-extensions | xargs -L 1 echo code --install-extension > $(CURDIR)/vscode/extensions
 
 .PHONY: brewfile
-brewfile: vscode-ext-bump
+brewfile:
 	@mv -v $(CURDIR)/Brewfile $(CURDIR)/Brewfile.old
 	@brew bundle dump
 
