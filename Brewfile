@@ -33,7 +33,6 @@ tap "vmware-tanzu/buildkit-cli-for-kubectl", "https://github.com/vmware-tanzu/bu
 tap "weaveworks/tap"
 tap "windmilleng/tap"
 tap "zaquestion/tap"
-brew "adr-tools"
 brew "yamllint"
 brew "ansible-lint"
 brew "gettext"
@@ -116,9 +115,7 @@ brew "k6"
 brew "k9s"
 brew "keptn"
 brew "kind"
-brew "kompose"
 brew "krew"
-brew "kube-linter"
 brew "kubectx"
 brew "kubeless"
 brew "kubeseal"
@@ -132,7 +129,6 @@ brew "maven"
 brew "mdbtools"
 brew "minikube"
 brew "mkcert"
-brew "mongodb-community@4.0"
 brew "mosh"
 brew "neofetch"
 brew "neovim"
@@ -206,11 +202,8 @@ brew "liamg/tfsec/tfsec"
 brew "linuxkit/linuxkit/linuxkit", args: ["HEAD"]
 brew "minamijoyo/tfmigrate/tfmigrate"
 brew "minio/stable/minio"
-brew "mongodb/brew/mongodb-community-shell"
-brew "mongodb/brew/mongodb-community@4.2"
 brew "norwoodj/tap/helm-docs"
 brew "phrase/brewed/phraseapp"
-brew "rhyeal/aws-rotate-iam-keys/aws-rotate-iam-keys"
 brew "sigstore/tap/gitsign"
 brew "weaveworks/tap/eksctl"
 brew "windmilleng/tap/tilt"
@@ -224,15 +217,12 @@ cask "google-cloud-sdk"
 cask "keybase"
 cask "kitty"
 cask "minishift"
-cask "session-manager-plugin"
 cask "signal"
 cask "vagrant"
-mas "Amphetamine", id: 937984704
-mas "Flow", id: 1423210932
 mas "Keynote", id: 409183694
-mas "Magnet", id: 441258766
-mas "Microsoft Remote Desktop", id: 1295203466
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Tailscale", id: 1475387142
 mas "Twitter", id: 1482454543
+mas "WireGuard", id: 1451685025
+mas "Xcode", id: 497799835
