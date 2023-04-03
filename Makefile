@@ -9,7 +9,6 @@ dotfiles: ## Installs the dotfiles.
 	done; \
 	ln -sfn $(CURDIR)/.gnupg/gpg.conf $(HOME)/.gnupg/gpg.conf;
 	ln -sfn $(CURDIR)/.gnupg/gpg-agent.conf $(HOME)/.gnupg/gpg-agent.conf;
-	ln -s $(HOME)/.tfenv/bin/* /usr/local/bin
 
 .PHONY: vscode
 vscode:
@@ -32,6 +31,9 @@ brewfile:
 brew:
 	# /usr/bin/ruby -e "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	brew bundle install --file "$(CURDIR)/Brewfile"
+	sudo ln -sfn /opt/homebrew/bin/nvim /usr/local/bin/nvim
+	sudo ln -sfn /opt/homebrew/bin/gpg /usr/local/bin/gpg
+	sudo ln -sfn /opt/homebrew/bin/pinentry-mac /usr/local/bin/pinentry-mac
 
 shell:
 	if [ ! -d $$HOME/.oh-my-zsh ]; then \
@@ -48,3 +50,14 @@ spaceship:
 
 powerlevel9k:
 	git clone https://github.com/bhilburn/powerlevel9k.git "${ZSH_CUSTOM}/themes/powerlevel9k"
+
+.PHONY: asdf
+asdf:
+	asdf plugin-add java https://github.com/halcyon/asdf-java.git || true
+	asdf plugin-add kubectl https://github.com/asdf-community/asdf-kubectl.git || true
+	asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git || true
+	asdf plugin-add terraform https://github.com/asdf-community/asdf-hashicorp.git || true
+	asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git || true
+
+install-fzf:
+	$$(brew --prefix)/opt/fzf/install
