@@ -41,8 +41,8 @@
 [icdiff]
 	options = --highlight --line-numbers
 
-[includeIf "gitdir:~/develop/sph/**"]
-    path = .gitconfig-sph
+[includeIf "gitdir:~/dev/aidence/**"]
+    path = .gitconfig-aidence
 
 [filter "lfs"]
 	process = git-lfs filter-process
@@ -54,6 +54,9 @@
     username = git
     useHttpPath = true
 [credential "https://gitlab.com/everyonecancontribute"]
+    username = git
+    useHttpPath = true
+[credential "https://gitlab.com/aidence"]
     username = git
     useHttpPath = true
 [init]
