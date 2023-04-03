@@ -36,6 +36,8 @@ source $HOME/.exports
 source $HOME/.aliases
 source $HOME/.functions
 
+[ -f ~/.functions-work] && source ~/.functions-work
+
 export PATH=$PATH:/Users/niclas/bin
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
