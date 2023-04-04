@@ -61,3 +61,9 @@ asdf:
 
 install-fzf:
 	$$(brew --prefix)/opt/fzf/install
+
+.PHONY: completions
+completions:
+	mkdir -p ${ZSH_CUSTOM}/completions
+	wget "https://raw.githubusercontent.com/ahmetb/kubectx/master/completion/_kubectx.zsh"  -O "${ZSH_CUSTOM}/completions/_kubectx.zsh"
+	wget "https://raw.githubusercontent.com/ahmetb/kubectx/master/completion/_kubens.zsh" -O "${ZSH_CUSTOM}/completions/_kubens.zsh"

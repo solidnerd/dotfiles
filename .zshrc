@@ -36,7 +36,7 @@ source $HOME/.exports
 source $HOME/.aliases
 source $HOME/.functions
 
-[ -f ~/.functions-work] && source ~/.functions-work
+[ -f ~/.functions-work ] && source ~/.functions-work
 
 export PATH=$PATH:/Users/niclas/bin
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
@@ -46,6 +46,7 @@ export PATH="${PATH}:${HOME}/.krew/bin"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 [ -f ~/.zsh-hooks.zsh ] && source ~/.zsh-hooks.zsh
+
 [ -f ~/.iterm2_statusbar.zsh ] && source ~/.iterm2_statusbar.zsh
 
 # Load Helm Access 
@@ -72,3 +73,6 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 . ~/.asdf/plugins/java/set-java-home.zsh
 
 # zprof
+fpath=(/Users/nmietz/.oh-my-zsh/custom/completions /Users/nmietz/.oh-my-zsh/plugins/virtualenv /Users/nmietz/.oh-my-zsh/plugins/dotenv /Users/nmietz/.oh-my-zsh/plugins/brew /Users/nmietz/.oh-my-zsh/plugins/aws /Users/nmietz/.oh-my-zsh/functions /Users/nmietz/.oh-my-zsh/completions /Users/nmietz/.oh-my-zsh/cache/completions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/5.8.1/functions)
+
+
