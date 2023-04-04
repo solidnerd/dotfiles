@@ -1,9 +1,29 @@
 #!/usr/bin/env bash
 
-SCRIPT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 
 init(){
-  tmux source-file ${SCRIPT_ROOT}/tmux-kubecontext-defaults.tmux
+  # Default values for the plugin
+  tmux set-option -goq @tmux_kubecontext_kubeconfig ""
+  tmux set-option -goq @tmux_kubecontext_kubectl_binary "kubectl"
+  tmux 
+  tmux set-option -goq @tmux_kubecontext_symbol_enable "true"
+  tmux set-option -goq @tmux_kubecontext_symbol "⎈"
+  tmux set-option -goq @tmux_kubecontext_symbol_fg_color "blue"
+  tmux 
+  tmux set-option -goq @tmux_kubecontext_context_fg_color "red"
+  tmux 
+  tmux set-option -goq @tmux_kubecontext_separator ":"
+  tmux set-option -goq @tmux_kubecontext_separator_fg_color "colour250"
+  tmux 
+  tmux set-option -goq @tmux_kubecontext_namespace_enable true
+  tmux set-option -goq @tmux_kubecontext_namespace_fg_color "cyan"
+  tmux 
+  tmux set-option -goq @tmux_kubecontext_error_enable true
+  tmux set-option -goq @tmux_kubecontext_error_prefix "[E]"
+  tmux set-option -goq @tmux_kubecontext_error_fg_color ""
+  tmux 
+  tmux set-option -goq @tmux_kubecontext_lock_enable "false"
 
   # Options for tmux_kubecontext state
   tmux set-option -goq @tmux_kubecontext_status_updated_time 0
