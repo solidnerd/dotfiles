@@ -75,4 +75,5 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # zprof
 fpath=(/Users/nmietz/.oh-my-zsh/custom/completions /Users/nmietz/.oh-my-zsh/plugins/virtualenv /Users/nmietz/.oh-my-zsh/plugins/dotenv /Users/nmietz/.oh-my-zsh/plugins/brew /Users/nmietz/.oh-my-zsh/plugins/aws /Users/nmietz/.oh-my-zsh/functions /Users/nmietz/.oh-my-zsh/completions /Users/nmietz/.oh-my-zsh/cache/completions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/5.8.1/functions)
 
-
+# Load Autocompletions from fpath
+autoload -U compinit && compinit
