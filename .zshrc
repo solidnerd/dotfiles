@@ -45,6 +45,7 @@ export PATH="${PATH}:${HOME}/.krew/bin"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+[ -f ~/.zsh-hooks.zsh ] && source ~/.zsh-hooks.zsh
 [ -f ~/.iterm2_statusbar.zsh ] && source ~/.iterm2_statusbar.zsh
 
 # Load Helm Access 
