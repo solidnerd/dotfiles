@@ -73,7 +73,10 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 . ~/.asdf/plugins/java/set-java-home.zsh
 
 # zprof
-fpath=(/Users/nmietz/.oh-my-zsh/custom/completions /Users/nmietz/.oh-my-zsh/plugins/virtualenv /Users/nmietz/.oh-my-zsh/plugins/dotenv /Users/nmietz/.oh-my-zsh/plugins/brew /Users/nmietz/.oh-my-zsh/plugins/aws /Users/nmietz/.oh-my-zsh/functions /Users/nmietz/.oh-my-zsh/completions /Users/nmietz/.oh-my-zsh/cache/completions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/5.8.1/functions)
+
+#FPATH Exentsions for Auto-Completion
+export fpath=(${HOMEBREW_PREFIX}/share/zsh-completions $fpath)
+export fpath=(${HOME}/.oh-my-zsh/custom/completions $fpath)
 
 # Load Autocompletions from fpath
-autoload -U compinit && compinit
+autoload -U compinit && compinit -u
