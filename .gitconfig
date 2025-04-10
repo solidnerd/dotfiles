@@ -42,7 +42,10 @@
 	options = --highlight --line-numbers
 
 [includeIf "gitdir:~/dev/aidence/**"]
-    path = .gitconfig-aidence
+    path = .gitconfig-dh
+
+[includeIf "gitdir:~/dev/deephealth/**"]
+    path = .gitconfig-dh
 
 [filter "lfs"]
 	process = git-lfs filter-process
@@ -59,7 +62,10 @@
 [credential "https://gitlab.com/aidence"]
     username = git
     useHttpPath = true
+[credential "https://gitlab.com/deephealth"]
+    username = git
+    useHttpPath = true
 [init]
 	defaultBranch = main
 [credential]
-	helper = store
+	helper = osxkeychain

@@ -1,5 +1,7 @@
+[gpg]
+	format = ssh
+
 [user]
-	email = niclas.mietz@aidence.com
+	email = niclas.mietz@deephealth.com
 	name = Niclas Mietz
-	signingkey = 4B298A66EB9A3D9C
-	
+	signingkey=~/.ssh/id_ed25519.pub
