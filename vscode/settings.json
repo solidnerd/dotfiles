@@ -1,67 +1,98 @@
 {
-    "window.zoomLevel": 1,
-    "workbench.colorTheme": "Bluloco Dark",
-    "terminal.external.osxExec": "iTerm.app",
-    "editor.fontFamily": "'Source Code Pro',Menlo, Monaco, 'Courier New', monospace",
-    "typescript.check.npmIsInstalled": false,
-    "terminal.integrated.fontFamily": "SauceCodePro Nerd Font",
-    "files.insertFinalNewline": true,
-    "editor.formatOnPaste": true,
-    "editor.renderWhitespace": "all",
-    "git.enabled": false,
-    "workbench.editor.showTabs": true,
-    "explorer.openEditors.visible": 0,
-    "workbench.sideBar.location": "right",
-    "workbench.startupEditor": "newUntitledFile",
-    "window.title": "${activeEditorLong}",
-    "go.autocompleteUnimportedPackages": true,
-    "go.useLanguageServer": true,
-    "go.lintTool": "golangci-lint",
-    "go.lintFlags": ["--fast"],
-    "shellcheck.run": "onSave",
-    "editor.minimap.enabled": false,
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "gitlens.advanced.messages": {
-        "suppressGitDisabledWarning": true
-    },
-    "vim.disableExtension": true,
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Bluloco Dark",
+  "editor.fontFamily": "'Source Code Pro',Menlo, Monaco, 'Courier New', monospace",
+  "typescript.check.npmIsInstalled": false,
+  "terminal.integrated.fontFamily": "SauceCodePro Nerd Font",
+  "files.insertFinalNewline": true,
+  "editor.formatOnPaste": true,
+  "editor.renderWhitespace": "all",
+  "workbench.editor.showTabs": "multiple",
+  "explorer.openEditors.visible": 0,
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "newUntitledFile",
+  "window.title": "${activeEditorLong}",
+  "go.autocompleteUnimportedPackages": true,
+  "go.useLanguageServer": true,
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": ["--fast"],
+  "shellcheck.run": "onSave",
+  "editor.minimap.enabled": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.disableExtension": true,
 
-    "editor.suggestSelection": "first",
-    "files.exclude": {
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
-    },
-    "editor.tabSize": 2,
-    "workbench.statusBar.visible": true,
-    "vs-kubernetes": {
-        "vs-kubernetes.minikube-path.mac": "/Users/niclas/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
-        "vscode-kubernetes.minikube-path.mac": "/Users/niclas/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
-    },
-    "[markdown]": {
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-    },
-    "terminal.integrated.fontSize": 15,
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.guides.indentation": true,
-    "[yaml]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[python]": {
-        "editor.formatOnType": true
-    },
+  "editor.suggestSelection": "first",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "editor.tabSize": 2,
+  "workbench.statusBar.visible": true,
+  "vs-kubernetes": {
+    "vs-kubernetes.kubectl-path.mac": "Users/nmietz/.asdf/shims/kubectl",
+    "vs-kubernetes.helm-path.mac": "/opt/homebrew/bin/helm",
+    "vs-kubernetes.minikube-path.mac": "/Users/niclas/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+    "vscode-kubernetes.minikube-path.mac": "/Users/niclas/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+    "vs-kubernetes.crd-code-completion": "enabled",
+    "vs-kubernetes.ignore-recommendations": true
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.guides.indentation": true,
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "hediet.vscode-drawio.resizeImages": null,
+  "files.associations": {
+    "*.gotmpl": "helm"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "yaml.schemas": {
+    "file:///Users/nmietz/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+
+  "git.openRepositoryInParentFolders": "always",
+  "[shellscript]": {
+    "editor.defaultFormatter": "mkhl.shfmt"
+  },
+  "vscode-kubernetes.kubectl-path-mac": "/Users/nmietz/.asdf/shims/kubectl",
+
+  "makefile.configureOnOpen": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "dart.flutterSdkPath": "/Users/nmietz/dev/flutter",
+  "git.autofetch": true,
+  "[sql]": {
+    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+  }
 }

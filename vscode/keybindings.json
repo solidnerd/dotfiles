@@ -35,5 +35,16 @@
     "key": "cmd+n",
     "command": "newFile.createNewFile"
   },
-  { "key": "cmd+x", "command": "execCut" }
+  {
+    "key": "cmd+x",
+    "command": "execCut"
+  },
+  {
+    "key": "cmd+i",
+    "command": "composerMode.agent"
+  },
+  {
+    "key": "cmd+i",
+    "command": "composerMode.agent"
+  }
 ]
