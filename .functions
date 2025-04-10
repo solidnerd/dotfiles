@@ -6,11 +6,6 @@ mkd() {
 	cd "$@" || exit
 }
 
-kops_state(){
- export KOPS_STATE_STORE=s3://$AWS_PROFILE-kops-state
- export AWS_SDK_LOAD_CONFIG=1
-}
-
 # Start an HTTP server from a directory, optionally specifying the port
 server() {
 	local port="${1:-8000}"
@@ -19,7 +14,6 @@ server() {
 	# And serve everything as UTF-8 (although not technically correct, this doesn’t break anything for binary files)
 	python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port"
 }
-
 
 # Make a temporary directory and enter it
 tmpd() {
@@ -30,35 +24,4 @@ tmpd() {
 		dir=$(mktemp -d -t "${1}.XXXXXXXXXX")
 	fi
 	cd "$dir" || exit
-}
-
-# go to a folder easily in your gopath
-gogo(){
-	local d=$1
-
-	if [[ -z $d ]]; then
-		echo "You need to specify a project name."
-		return 1
-	fi
-
-	if [[ "$d" == github* ]]; then
-		d=$(echo "$d" | sed 's/.*\///')
-	fi
-	d=${d%/}
-
-	# search for the project dir in the GOPATH
-	local path=( $(find "${GOPATH}/src" \( -type d -o -type l \) -iname "$d"  | awk '{print length, $0;}' | sort -n | awk '{print $2}') )
-
-	if [ "${path[0]}" == "" ] || [ "${path[*]}" == "" ]; then
-		echo "Could not find a directory named $d in $GOPATH"
-		echo "Maybe you need to 'go get' it ;)"
-		return 1
-	fi
-
-	# enter the first path found
-	cd "${path[0]}" || return 1
-}
-
-rpf() {
-rg --passthrough "$2" -r "$3" $1
 }
