@@ -1,5 +1,2 @@
 export EDITOR=/usr/local/bin/nvim
 export GPG_TTY=$(tty)
-
-
-export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.config/gcp-svc-account.json"
