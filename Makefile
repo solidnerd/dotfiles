@@ -7,6 +7,7 @@ dotfiles: ## Installs the dotfiles.
 		f=$$(basename $$file); \
 		ln -sfn $$file $(HOME)/$$f; \
 	done; \
+	mkdir -p $(HOME)/.gnupg;
 	ln -sfn $(CURDIR)/.gnupg/gpg.conf $(HOME)/.gnupg/gpg.conf;
 	ln -sfn $(CURDIR)/.gnupg/gpg-agent.conf $(HOME)/.gnupg/gpg-agent.conf;
 
@@ -53,11 +54,12 @@ powerlevel9k:
 
 .PHONY: asdf
 asdf:
-	asdf plugin-add java https://github.com/halcyon/asdf-java.git || true
-	asdf plugin-add kubectl https://github.com/asdf-community/asdf-kubectl.git || true
-	asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git || true
-	asdf plugin-add terraform https://github.com/asdf-community/asdf-hashicorp.git || true
-	asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git || true
+	asdf plugin add kubectl || true
+	asdf plugin add nodejs || true
+	asdf plugin add terraform || true
+	asdf plugin add elixir || true
+	asdf plugin add golang || true
+	asdf plugin add rust || true
 
 install-fzf:
 	$$(brew --prefix)/opt/fzf/install

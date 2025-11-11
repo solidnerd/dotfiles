@@ -57,8 +57,6 @@ export PATH="$PATH:$HOME/.cargo/bin"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-. ~/.asdf/plugins/java/set-java-home.zsh
-
 #FPATH Exentsions for Auto-Completion
 export fpath=(${HOMEBREW_PREFIX}/share/zsh-completions $fpath)
 export fpath=(${HOME}/.oh-my-zsh/custom/completions $fpath)
@@ -77,9 +75,6 @@ export PATH="$PATH:$HOME/.istioctl/bin"
 # Flutter
 export PATH="$PATH:$HOME/dev/flutter/bin"
 
-. "$HOME/.local/bin/env"
-
 eval "$(/opt/homebrew/bin/brew shellenv)"
-
 
 export KUBE_EDITOR="code --wait"
