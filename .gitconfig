@@ -23,7 +23,7 @@
 [user]
 	email = niclas@mietz.io
 	name = solidnerd
-	signingkey = B5469BE5
+	signingkey = /Users/niclas/.ssh/id_ed25519.pub
 
 [commit]
 	gpgsign = true
@@ -40,6 +40,7 @@
 	textconv = sops -d
 [gpg]
 	program = /usr/local/bin/gpg
+	format = ssh
 [icdiff]
 	options = --highlight --line-numbers
 
