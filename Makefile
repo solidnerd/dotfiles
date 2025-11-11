@@ -1,4 +1,4 @@
-ZSH_CUSTOM := $(HOME)/.oh-my-zsh/custom
+ZSH_CUSTOM := $$HOME/.oh-my-zsh/custom
 
 .PHONY: dotfiles
 dotfiles: ## Installs the dotfiles.

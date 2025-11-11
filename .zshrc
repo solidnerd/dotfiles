@@ -17,7 +17,7 @@ export PATH="$PATH:$GOPATH/bin"
 
 # oh-my-zsh
 export ZSH=$HOME/.oh-my-zsh
-plugins=(gcloud brew dotenv virtualenv)
+plugins=(gcloud brew dotenv virtualenv uv)
 
 export VIRTUAL_ENV_DISABLE_PROMPT=false
 
@@ -76,3 +76,10 @@ export PATH="$PATH:$HOME/.istioctl/bin"
 
 # Flutter
 export PATH="$PATH:$HOME/dev/flutter/bin"
+
+. "$HOME/.local/bin/env"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+
+export KUBE_EDITOR="code --wait"
