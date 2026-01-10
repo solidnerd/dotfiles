@@ -1,7 +1,7 @@
 #!/bin/env zsh
 
 export LC_ALL=en_US.UTF-8
-export TERM=xterm-256color
+
 
 ZSH_TMUX_AUTOSTART='true'
 
