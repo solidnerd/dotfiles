@@ -5,3 +5,8 @@
 	email = niclas.mietz@deephealth.com
 	name = Niclas Mietz
 	signingkey=~/.ssh/id_ed25519.pub
+
+# Use standard ssh-keygen for signing
+# (unlike personal config which uses 1Password's op-ssh-sign)
+[gpg "ssh"]
+  program = ssh-keygen
