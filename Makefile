@@ -44,6 +44,13 @@ shell:
 		git pull "$$HOME/.oh-my-zsh"; \
 	fi;
 
+tpm: shell
+	@if [ ! -d ~/.tmux/plugins/tpm ]; then \
+		git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm; \
+	else \
+		echo "TPM already installed at ~/.tmux/plugins/tpm"; \
+	fi
+
 prompt: shell spaceship
 spaceship:
 	git clone https://github.com/denysdovhan/spaceship-prompt.git "${ZSH_CUSTOM}/themes/spaceship-prompt"
