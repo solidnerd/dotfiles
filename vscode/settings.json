@@ -94,5 +94,7 @@
   "git.autofetch": true,
   "[sql]": {
     "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
-  }
+  },
+  "claudeCode.preferredLocation": "panel",
+  "docker.extension.enableComposeLanguageServer": false
 }
