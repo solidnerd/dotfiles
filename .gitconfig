@@ -80,4 +80,7 @@
 [init]
 	defaultBranch = main
 [credential]
-	helper = osxkeychain
+    helper = osxkeychain
+# Automatically rewrite gitlab.com HTTPS URLs to use SSH
+[url "git@gitlab.com:"]
+  insteadOf = https://gitlab.com/
