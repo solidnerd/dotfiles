@@ -78,3 +78,4 @@ export PATH="$PATH:$HOME/dev/flutter/bin"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export KUBE_EDITOR="code --wait"
+export PATH="$HOME/.local/bin:$PATH"
