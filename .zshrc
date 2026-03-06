@@ -49,6 +49,8 @@ export PATH="$PATH:$HOME/.krew/bin"
 # Load Helm Access
 [ -f ~/.helmrc ] && source ~/.helmrc
 
+[ -f ~/.jira-cli ] && source ~/.jira-cli
+
 # source <(hcloud completion zsh)
 [ -f "$HOME/.sdkman/bin/sdkman-init.sh" ] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
