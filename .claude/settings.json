@@ -11,5 +11,27 @@
   },
   "enabledPlugins": {
     "glab@gitlab-skills": true
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/notify.py"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/notify.py"
+          }
+        ]
+      }
+    ]
   }
 }
