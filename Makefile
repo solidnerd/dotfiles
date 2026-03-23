@@ -10,6 +10,8 @@ dotfiles: ## Installs the dotfiles.
 	mkdir -p $(HOME)/.gnupg;
 	ln -sfn $(CURDIR)/.gnupg/gpg.conf $(HOME)/.gnupg/gpg.conf;
 	ln -sfn $(CURDIR)/.gnupg/gpg-agent.conf $(HOME)/.gnupg/gpg-agent.conf;
+	mkdir -p $(HOME)/.claude;
+	ln -sfn $(CURDIR)/.claude/settings.json $(HOME)/.claude/settings.json;
 
 .PHONY: vscode
 vscode:
