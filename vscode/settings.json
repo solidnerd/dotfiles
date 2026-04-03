@@ -41,7 +41,9 @@
     "vs-kubernetes.ignore-recommendations": true
   },
   "[markdown]": {
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 500
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
