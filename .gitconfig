@@ -69,18 +69,6 @@
 	clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
 
-[credential "https://gitlab.com/solidnerd"]
-    username = git
-    useHttpPath = true
-[credential "https://gitlab.com/everyonecancontribute"]
-    username = git
-    useHttpPath = true
-[credential "https://gitlab.com/aidence"]
-    username = git
-    useHttpPath = true
-[credential "https://gitlab.com/deephealth"]
-    username = git
-    useHttpPath = true
 [init]
 	defaultBranch = main
 [credential]
