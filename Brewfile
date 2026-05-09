@@ -57,7 +57,6 @@ brew "sigstore/tap/gitsign"
 
 # ─── Languages & Runtimes ────────────────────────────────────────────────────
 brew "asdf"
-brew "nvm"
 
 # ─── Python Tooling ──────────────────────────────────────────────────────────
 brew "uv"

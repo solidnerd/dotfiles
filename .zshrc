@@ -164,19 +164,3 @@ fi
 [ -f ~/.jira-cli ] && source ~/.jira-cli
 [ -f "$HOME/.sdkman/bin/sdkman-init.sh" ] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-# ===========================================================
-# NVM (lazy-loaded)
-# ===========================================================
-export NVM_DIR="$HOME/.nvm"
-
-__nvm_load() {
-  unset -f nvm node npm npx yarn pnpm __nvm_load
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && source "/opt/homebrew/opt/nvm/nvm.sh"
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && source "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
-}
-nvm()  { __nvm_load; nvm "$@"; }
-node() { __nvm_load; node "$@"; }
-npm()  { __nvm_load; npm "$@"; }
-npx()  { __nvm_load; npx "$@"; }
-yarn() { __nvm_load; yarn "$@"; }
-pnpm() { __nvm_load; pnpm "$@"; }
