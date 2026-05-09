@@ -59,6 +59,10 @@
 [includeIf "gitdir:~/dev/d8h/**"]
     path = .gitconfig-dh
 
+[includeIf "gitdir:/private/tmp/**"]
+    path = .gitconfig-dh
+
+
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
