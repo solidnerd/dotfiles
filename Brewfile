@@ -1,22 +1,14 @@
 # ─── Taps ────────────────────────────────────────────────────────────────────
 tap "ankitpokhrel/jira-cli"
 tap "atombender/ktail"
-tap "civo/tools"
 tap "cloudflare/cloudflare"
-tap "dopplerhq/cli"
-tap "fairwindsops/tap"
-tap "gabrie30/utils"
-tap "golangci/tap"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/services"
-tap "johanhaleby/kubetail"
 tap "mike-engel/jwt-cli"
-tap "minamijoyo/tfmigrate"
 tap "norwoodj/tap"
 tap "sigstore/tap"
 tap "terror/tap"
-tap "windmilleng/tap"
 
 # ─── Shell & Core Utilities ──────────────────────────────────────────────────
 brew "ast-grep"
@@ -26,7 +18,6 @@ brew "bat"
 brew "coreutils"
 brew "curl"
 brew "fd"
-brew "fish"
 brew "fzf"
 brew "gnu-sed"
 brew "gnu-tar"
@@ -67,18 +58,8 @@ brew "sigstore/tap/gitsign"
 # ─── Languages & Runtimes ────────────────────────────────────────────────────
 brew "asdf"
 brew "nvm"
-brew "python@3.9"
-brew "python@3.11"
-brew "ruby"
 
 # ─── Python Tooling ──────────────────────────────────────────────────────────
-brew "ansible-lint", link: false
-brew "isort"
-brew "poetry"
-brew "pre-commit", link: false
-brew "pydantic", link: false
-brew "rpds-py", link: false
-brew "ruff"
 brew "uv"
 
 # ─── Node Tooling ────────────────────────────────────────────────────────────
@@ -89,9 +70,7 @@ brew "autoconf"
 brew "automake"
 brew "cmake"
 brew "cocoapods"
-brew "gradle"
 brew "just"
-brew "maven"
 brew "terror/tap/just-lsp"
 
 # ─── Container & Virtualization ──────────────────────────────────────────────
@@ -102,13 +81,9 @@ brew "qemu"
 
 # ─── Kubernetes ──────────────────────────────────────────────────────────────
 brew "argocd"
-brew "chainsaw"
 brew "chart-testing"
-brew "cilium-cli"
-brew "ingress2gateway"
 brew "istioctl"
 brew "k3d"
-brew "k6"
 brew "k9s"
 brew "kind"
 brew "krew"
@@ -116,20 +91,13 @@ brew "kubeconform"
 brew "kubectx"
 brew "kubeseal"
 brew "kustomize"
-brew "minikube"
 brew "skaffold"
-brew "stern"
-brew "velero"
 brew "atombender/ktail/ktail"
-brew "fairwindsops/tap/pluto"
-brew "fairwindsops/tap/rbac-lookup"
-brew "johanhaleby/kubetail/kubetail", args: ["with-short-names"]
 
 # ─── Cloud CLIs ──────────────────────────────────────────────────────────────
 brew "azure-cli"
 brew "doctl"
 brew "hcloud"
-brew "civo/tools/civo"
 
 # ─── Infrastructure as Code ──────────────────────────────────────────────────
 brew "conftest"
@@ -142,7 +110,6 @@ brew "terragrunt"
 brew "terramate"
 brew "tflint"
 brew "hashicorp/tap/terraform-ls"
-brew "minamijoyo/tfmigrate/tfmigrate"
 brew "norwoodj/tap/helm-docs"
 
 # ─── Security & Secrets ──────────────────────────────────────────────────────
@@ -161,18 +128,14 @@ brew "hashicorp/tap/vault"
 
 # ─── CI/CD & Release ─────────────────────────────────────────────────────────
 brew "bats-core"
-brew "goreleaser"
 brew "mockery"
 brew "shellcheck"
 brew "shfmt"
-brew "golangci/tap/golangci-lint"
 
 # ─── GitHub / GitLab ─────────────────────────────────────────────────────────
 brew "gemini-cli"
 brew "gh"
 brew "glab"
-brew "hugo"
-brew "gabrie30/utils/ghorg"
 brew "ankitpokhrel/jira-cli/jira-cli"
 
 # ─── Network Tools ───────────────────────────────────────────────────────────
@@ -218,9 +181,6 @@ brew "mas"
 brew "neovim"
 brew "terminal-notifier"
 brew "cloudflare/cloudflare/cf-terraforming"
-brew "dopplerhq/cli/doppler"
-brew "mike-engel/jwt-cli/jwt-cli"
-brew "windmilleng/tap/tilt"
 
 # ─── Build Dependencies (explicit) ───────────────────────────────────────────
 brew "edencommon"
@@ -240,7 +200,6 @@ brew "wangle"
 
 # ─── Casks ───────────────────────────────────────────────────────────────────
 cask "1password-cli"
-cask "alacritty"
 cask "caffeine"
 cask "coconutbattery"
 cask "font-hack-nerd-font"
@@ -248,7 +207,6 @@ cask "font-sf-mono-for-powerline"
 cask "gcloud-cli"
 cask "ghostty"
 cask "keybase"
-cask "kitty"
 cask "mongodb-compass"
 cask "signal"
 cask "swiftbar"
@@ -256,13 +214,7 @@ cask "swiftbar"
 # ─── Mac App Store ───────────────────────────────────────────────────────────
 mas "Bitwarden", id: 1352778147
 mas "Flow", id: 1423210932
-mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
 mas "Microsoft Remote Desktop", id: 1295203466
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Xcode", id: 497799835
 
 # ─── VSCode Extensions ───────────────────────────────────────────────────────
 vscode "ahmadalli.vscode-nginx-conf"
@@ -284,6 +236,7 @@ vscode "davidanson.vscode-markdownlint"
 vscode "dbaeumer.vscode-eslint"
 vscode "docker.docker"
 vscode "docsmsft.docs-markdown"
+vscode "grafana.vscode-jsonnet"
 vscode "donjayamanne.python-environment-manager"
 vscode "dynoser.helml"
 vscode "eamodio.gitlens"
@@ -291,7 +244,6 @@ vscode "editorconfig.editorconfig"
 vscode "esbenp.prettier-vscode"
 vscode "fosshaas.fontsize-shortcuts"
 vscode "foxundermoon.shell-format"
-vscode "github.copilot"
 vscode "github.copilot-chat"
 vscode "golang.go"
 vscode "gruntwork.terragrunt-ls"
@@ -303,10 +255,12 @@ vscode "hyzeta.vscode-theme-github-light"
 vscode "inferrinizzard.prettier-sql-vscode"
 vscode "jakebathman.nginx-log-highlighter"
 vscode "jallen7usa.vscode-cue-fmt"
+vscode "janisdd.vscode-edit-csv"
 vscode "jasonnutter.search-node-modules"
 vscode "jawandarajbir.react-vscode-extension-pack"
 vscode "jetmartin.bats"
 vscode "joshuapoehls.json-escaper"
+vscode "mrmlnc.vscode-json5"
 vscode "mads-hartmann.bash-ide-vscode"
 vscode "marcostazi.vs-code-vagrantfile"
 vscode "max-ss.cyberpunk"
@@ -339,7 +293,10 @@ vscode "msjsdiag.vscode-react-native"
 vscode "mtxr.sqltools"
 vscode "mushan.vscode-paste-image"
 vscode "nickgo.cuelang"
+vscode "nefrob.vscode-just-syntax"
 vscode "nsfilho.tosnippet"
+vscode "pascalreitermann93.vscode-yaml-sort"
+vscode "phplasma.csv-to-table"
 vscode "premparihar.gotestexplorer"
 vscode "raynigon.nginx-formatter"
 vscode "redhat.vscode-commons"
@@ -349,6 +306,8 @@ vscode "rogalmic.bash-debug"
 vscode "samuelcolvin.jinjahtml"
 vscode "shanoor.vscode-nginx"
 vscode "tamasfe.even-better-toml"
+vscode "tomoyukim.vscode-mermaid-editor"
+vscode "tsandall.opa"
 vscode "tanaka-x.prop2yaml"
 vscode "teabyii.ayu"
 vscode "tim-koehler.helm-intellisense"
