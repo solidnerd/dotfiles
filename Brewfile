@@ -132,7 +132,6 @@ brew "shellcheck"
 brew "shfmt"
 
 # ─── GitHub / GitLab ─────────────────────────────────────────────────────────
-brew "gemini-cli"
 brew "gh"
 brew "glab"
 brew "ankitpokhrel/jira-cli/jira-cli"
