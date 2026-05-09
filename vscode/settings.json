@@ -1,6 +1,5 @@
 {
   "window.zoomLevel": 1,
-  "workbench.colorTheme": "Bluloco Dark",
   "editor.fontFamily": "'Source Code Pro',Menlo, Monaco, 'Courier New', monospace",
   "typescript.check.npmIsInstalled": false,
   "terminal.integrated.fontFamily": "SauceCodePro Nerd Font",
@@ -67,7 +66,7 @@
     "*.gotmpl": "helm"
   },
   "[dockerfile]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    "editor.defaultFormatter": "ms-azuretools.vscode-containers"
   },
   "go.toolsManagement.autoUpdate": true,
   "yaml.schemas": {
@@ -96,5 +95,6 @@
     "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
   },
   "claudeCode.preferredLocation": "panel",
-  "docker.extension.enableComposeLanguageServer": false
+  "docker.extension.enableComposeLanguageServer": false,
+  "workbench.colorTheme": "Bluloco Dark"
 }
